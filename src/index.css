@@ -10,34 +10,49 @@ code {
 }
 
 .components {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   /* justify-content: space-around; */
   /* justify-content: center; */
-  background-color: #f7f1e3;
-  border-top: 2px solid #282c34;
-  border-radius: 5px;
-  /* border-bottom: 1px solid #000; */
+  background-color: #282c34;
+  /* border-top: 2px solid #61dbfb; */
+  border-radius: 2px;
+}
+
+h1 {
+  color: #282c34;
 }
 
 .vert-line {
-  height: 300px;
-  border-left: 2px solid #282c34;
+  height: 340px;
+  border-left: 2px solid #61dbfb;
 }
 
 .form {
   margin: 5px 5px;
+  width: 250px;
 }
 
 ul {
   list-style-type: none;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-style: italic;
+  float: left;
 }
 
 ul input {
-  float: left;
   margin-right: 20px;
+}
+
+ul button {
+  float: right;
+  margin-left: 20px;
+}
+
+li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #fff;
 }

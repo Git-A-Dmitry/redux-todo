@@ -1,6 +1,4 @@
-import { legacy_createStore as createStore } from 'redux';
-
-const todo = (state = [], action) => {
+export const todo = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO': {
       return [
@@ -23,21 +21,3 @@ const todo = (state = [], action) => {
     }
   }
 };
-
-export const store = createStore(todo);
-
-// action creators
-export const addTodo = (title) => ({
-  type: 'ADD_TODO',
-  title,
-});
-
-export const removeTodo = (id) => ({
-  type: 'REMOVE_TODO',
-  id,
-});
-
-export const toggleTodo = (id) => ({
-  type: 'TOGGLE_TODO',
-  id,
-});

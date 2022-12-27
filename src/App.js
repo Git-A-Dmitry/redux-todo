@@ -9,7 +9,7 @@ function App() {
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
       </header>
-      <h2>Awesome Todo App</h2>
+      <h1>Awesome Todo App</h1>
       <div className='components'>
         <NewTodo />
         <div className='vert-line'></div>
