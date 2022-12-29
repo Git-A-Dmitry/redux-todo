@@ -1,0 +1,32 @@
+.form-input {
+  margin: 5px 5px;
+  width: 300px;
+  border: 2px solid #61dbfb;
+
+  input {
+    width: 285px;
+    padding: 10px 5px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #61dbfb;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .btn {
+    width: 150px;
+    padding: 10px 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #61dbfb;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,6 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 // import { addTodo, removeTodo, toggleTodo } from '../store/store';
-import { addTodo, removeTodo, toggleTodo } from '../store/actions';
+import { addTodo } from '../store/actions';
 
 const NewTodo = () => {
   const dispatch = useDispatch();
@@ -12,13 +12,13 @@ const NewTodo = () => {
   };
 
   return (
-    <div className='form'>
+    <div className='form-input'>
       <form action='' onSubmit={handleSubmit}>
-        <input type='text' name='title' placeholder='new todo' />
-        {/* <button className='btn' type='submit' value='Add'>
+        <input type='text' name='title' placeholder='' />
+        <button className='btn' type='submit' value='Add'>
           Add Todo
-        </button> */}
-        <input type='submit' value='Add' />
+        </button>
+        {/* <input type='submit' value='Add' /> */}
       </form>
     </div>
   );
