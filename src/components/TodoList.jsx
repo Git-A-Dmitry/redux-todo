@@ -6,6 +6,12 @@ const TodoList = () => {
   const todos = useSelector((state) => state.todo);
   const dispatch = useDispatch();
 
+  const todoDate = new Date();
+  const day = todoDate.getDate();
+  const month = todoDate.getMonth() + 1;
+  const year = todoDate.getFullYear();
+  const initialDate = day + '.' + month + '.' + year;
+
   return (
     <div className='todo-list'>
       <ul>
@@ -16,7 +22,11 @@ const TodoList = () => {
               checked={todo.completed}
               onChange={() => dispatch(toggleTodo(todo.id))}
             />{' '}
-            {todo.title} <button onClick={() => dispatch(removeTodo(todo.id))}>delete</button>
+            <span>{initialDate}</span>
+            {todo.title}
+            <button className='del-btn' onClick={() => dispatch(removeTodo(todo.id))}>
+              delete
+            </button>
           </li>
         ))}
       </ul>
