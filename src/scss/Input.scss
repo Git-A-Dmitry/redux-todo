@@ -1,16 +1,19 @@
+@import url('https://api.fontshare.com/v2/css?f[]=chillax@500&display=swap');
+
 .form-input {
-  margin: 5px 5px;
+  margin: 7px;
   width: 300px;
-  border: 2px solid #61dbfb;
+  // border: 2px solid #61dbfb;
 
   input {
     width: 285px;
-    padding: 10px 5px;
+    padding: 5px 5px;
     display: block;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    border-bottom: 2px solid #61dbfb;
+    border: 2px solid #61dbfb;
+    font-family: 'Chillax', sans-serif;
   }
 
   input:focus {
@@ -18,12 +21,15 @@
   }
 
   .btn {
-    width: 150px;
-    padding: 10px 5px;
+    width: 120px;
+    padding: 5px;
     margin-top: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     background-color: #61dbfb;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    // font-family: 'Chillax', sans-serif;
   }
 
   .btn:hover {
