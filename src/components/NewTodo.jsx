@@ -1,5 +1,4 @@
 import { useDispatch } from 'react-redux';
-// import { addTodo, removeTodo, toggleTodo } from '../store/store';
 import { addTodo } from '../store/actions';
 
 const NewTodo = () => {
@@ -16,7 +15,7 @@ const NewTodo = () => {
       <form action='' onSubmit={handleSubmit}>
         <input type='text' name='title' placeholder='' />
         <button className='btn' type='submit' value='Add'>
-          Add Todo
+          Add
         </button>
         {/* <input type='submit' value='Add' /> */}
       </form>

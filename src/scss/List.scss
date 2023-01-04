@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  /* float: left; */
+  margin-top: 20px;
+  /* padding-left: 0px; */
+
+  input[type='checkbox'] {
+    margin-right: 20px;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    accent-color: #2196f3;
+  }
+
+  li {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10px;
+    color: yellow;
+    /* font-family: 'Sentient', serif; */
+    font-family: 'Chillax', sans-serif;
+  }
+
+  button {
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40px;
+    height: 26px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    /* display: inline-block; */
+  }
+}

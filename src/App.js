@@ -11,9 +11,11 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
+        <TodoDate />
+        <img src={logo} className='App-logo' alt='logo' />
       </header>
       {/* <h2>JUST DO IT</h2> */}
-      <TodoDate />
+      {/* <TodoDate /> */}
 
       <div className='components'>
         <NewTodo />

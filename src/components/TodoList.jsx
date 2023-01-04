@@ -3,6 +3,8 @@ import { removeTodo, toggleTodo } from '../store/actions';
 import { selectVisibleTodos } from '../store/selector';
 import { selectActiveFilter } from '../store/filters/filter-selector';
 
+import '../scss/List.scss';
+
 const TodoList = () => {
   const dispatch = useDispatch();
   const activeFilter = useSelector(selectActiveFilter);
@@ -14,14 +16,16 @@ const TodoList = () => {
       <ul>
         {todos.map((todo) => (
           <li key={todo.title}>
-            <input //
-              type='checkbox'
-              checked={todo.completed}
-              onChange={() => dispatch(toggleTodo(todo.id))}
-            />{' '}
+            <div className='checkbox-container'>
+              <input //
+                type='checkbox'
+                checked={todo.completed}
+                onChange={() => dispatch(toggleTodo(todo.id))}
+              />{' '}
+            </div>
             {todo.title}
             <button className='del-btn' onClick={() => dispatch(removeTodo(todo.id))}>
-              delete
+              DEL
             </button>
           </li>
         ))}

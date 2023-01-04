@@ -5,7 +5,7 @@
 }
 
 .App-logo {
-  height: 15vmin;
+  height: 12vmin;
   pointer-events: none;
 }
 
@@ -19,10 +19,10 @@
   background-color: #282c34;
   min-height: 15vh;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  // font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -41,8 +41,11 @@
 
 .components {
   width: 85%;
+  height: 500px;
+  overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   display: flex;
   background-color: #282c34;
   border-radius: 3px;
@@ -60,6 +63,6 @@ h2 {
 }
 
 .vert-line {
-  height: 480px;
-  border-left: 2px solid #61dbfb;
+  min-height: 1000px;
+  border-left: 6px solid #61dbfb;
 }
