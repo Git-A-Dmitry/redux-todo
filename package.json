@@ -1,5 +1,6 @@
 {
   "name": "redux-todo",
+  "author": "Dmitry Ananin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
