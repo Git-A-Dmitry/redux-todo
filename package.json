@@ -3,7 +3,7 @@
   "author": "Dmitry Ananin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://git-a-dmitry.github.io/redux-todo",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
