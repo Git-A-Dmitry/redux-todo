@@ -8,7 +8,6 @@ function TodoDate() {
   return (
     <div>
       <h2 className='date'>TODAY IS: {initialDate}</h2>
-      {/* <h2 className='date'>TODAY IS: {initialDate} – JUST DO IT 😱</h2> */}
     </div>
   );
 }
